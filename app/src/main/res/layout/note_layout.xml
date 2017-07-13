@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This linear layout contains a single item in the list of tasks displayed in the MainActivity
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.yov.de.gardenofmind.MainActivity">
+
+    <!--
+        This horizontal linear layout displays the description and priority of a task
+        in a single horizontal line
+    -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <View
+            android:layout_width="3dp"
+            android:paddingLeft="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"/>
+        <!-- TextView that displays the description of a task -->
+
+        <TextView
+            android:id="@+id/taskWord"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            style="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- An empty view for spacing out the description and priority views -->
+
+        <!-- A priority circle that is colored in programmatically in the adapter code -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/background_light"/>
+
+    <!-- A gray divider line at the bottom of each task -->
+
+
+</LinearLayout>
+
+
